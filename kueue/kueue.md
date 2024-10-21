@@ -201,7 +201,48 @@ spec:
     
 用户需要提交 jobs 到 LocalQueue 而不是直接到 ClusterQueue。
 
-## 四、创建 Workload
+## 四、创建 Job
+
+现在，我们来创建一个 Job 交给 Kueue 执行。需要注意几点：
+- Job 必须设置为 suspended 状态。
+- 需要给 Job 设置队列。
+- 对于每一个 Job pod，需要包含资源请求。
+
+按照这个创建：
+```YAML
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: sample-job
+  namespace: team-a
+  labels:
+    kueue.x-k8s.io/queue-name: team-a-queue # 定义想要放入的队列
+spec:
+  parallelism: 3
+  completions: 3
+  suspend: true # 一定要为 true
+  template:
+    spec:
+      containers:
+      - name: dummy-job
+        image: uhub.service.ucloud.cn/yingkaile/sleep:latest
+        args: ["30s"]
+        resources:
+          requests:
+            cpu: 1
+            memory: "200Mi"
+      restartPolicy: Never
+```
+ueue 会提取我们的 job 信息，然后创建成 Workload。
+创建完成之后，我们输入指令 `kubectl -n team-a get workloads`，得到：
+```bash
+NAME                        QUEUE          RESERVED IN       ADMITTED   FINISHED   AGE
+job-sample-jobfrjsv-c9d31   team-a-queue   cluster-queue-1   True                  5m53s
+```
+至此，我们使用 Kueue 完成了 Job。
+
+
+## 五、创建 Workload
 
 Workload 是一个应用，它会运行到完成。它是 Kueue 中准入的单位。Workload 由一个或多个 pods 组成。Kueue 不会直接操作 Job，而是通过管理 workload 来间接性操作 Job。**Kueue 会为每一个 job 创建一个 workload。**
 
@@ -244,47 +285,6 @@ NAME                        QUEUE          RESERVED IN       ADMITTED   FINISHED
 sample-workload             team-a-queue   cluster-queue-1   True                  2m5s
 ```
 
-## 五、创建 Job
-
-> 这一步其实还是创建 Workload，Kueue 会提取我们的 job 信息，然后创建成 Workload。
-
-现在，我们来创建一个 Job 交给 Kueue 执行。需要注意几点：
-- Job 必须设置为 suspended 状态。
-- 需要给 Job 设置队列。
-- 对于每一个 Job pod，需要包含资源请求。
-
-按照这个创建：
-```YAML
-apiVersion: batch/v1
-kind: Job
-metadata:
-  generateName: sample-job
-  namespace: team-a
-  labels:
-    kueue.x-k8s.io/queue-name: team-a-queue # 定义想要放入的队列
-spec:
-  parallelism: 3
-  completions: 3
-  suspend: true # 一定要为 true
-  template:
-    spec:
-      containers:
-      - name: dummy-job
-        image: uhub.service.ucloud.cn/yingkaile/sleep:latest
-        args: ["30s"]
-        resources:
-          requests:
-            cpu: 1
-            memory: "200Mi"
-      restartPolicy: Never
-```
-创建完成之后，我们输入指令 `kubectl -n team-a get workloads`，得到：
-```bash
-NAME                        QUEUE          RESERVED IN       ADMITTED   FINISHED   AGE
-job-sample-jobfrjsv-c9d31   team-a-queue   cluster-queue-1   True                  5m53s
-```
-至此，我们使用 Kueue 完成了 Job。
-
 ## 七、优先级和抢占
 - **Case 1**: 有两个 ClusterQueue (team-a-cq & team-b-cq) 在同一个 cohort, yaml 中设置了 `borrowingLimit`
     
@@ -301,15 +301,15 @@ job-sample-jobfrjsv-c9d31   team-a-queue   cluster-queue-1   True               
         - name: default
           resources:
           - name: cpu
-            nominalQuota: 20
-            borrowingLimit: 10
+            nominalQuota: 40
+            borrowingLimit: 20
       preemption:
         reclaimWithinCohort: Any
     ```
     
     ![cohortPreemption.png](/kueue/images/cohortPreemption.png)
     
-  team-a-cq 的 `borrowingLimit` 为 10，它可以向其他 ClusterQueue 借用 10 cpu，总数可达到 30。
+  team-a-cq 的 `borrowingLimit` 为 20，它可以向其他 ClusterQueue 借用 20 cpu，总数可达到 60。
   如果 team-b-cq 需要它自己原本的 10 cpu，team-a-cq 需要释放借来的资源。
 
 - **Case 2**: 有两个 ClusterQueue (team-a-cq & team-b-cq) 在同一个 cohort, yaml 中没有设置 `borrowingLimit`
@@ -318,7 +318,7 @@ job-sample-jobfrjsv-c9d31   team-a-queue   cluster-queue-1   True               
     apiVersion: kueue.x-k8s.io/v1beta1
     kind: ClusterQueue
     metadata:
-      name: team-a-cq
+      name: team-b-cq
     spec:
       cohort: all-teams
       resourceGroups:
@@ -327,7 +327,7 @@ job-sample-jobfrjsv-c9d31   team-a-queue   cluster-queue-1   True               
           - name: default
             resources:
             - name: cpu
-              nominalQuota: 8
+              nominalQuota: 40
       preemption:
         reclaimWithinCohort: Any
         withinClusterQueue: LowerPriority
