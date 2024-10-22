@@ -1,8 +1,8 @@
 {
     "kueue": {
-        "title": "Kueue",
+        "title": "Introduction to Kueue",
         "author": "BinL",
-        "tags": [],
+        "tags": ["kubernetes", "Cloud-native"],
         "category": ""
     }
 }
