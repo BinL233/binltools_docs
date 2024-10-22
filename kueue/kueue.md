@@ -6,7 +6,7 @@ Kueue 的优势有：
 - 支持多种 job： BatchJob、MPIJob、JobSet、Pod、RayJob...
 - 支持自定义 job CRDs 通过 Extension points 和 Libraries。
 
-![theory-of-operation](/kueue/images/theory-of-operation.png)
+![theory-of-operation](https://github.com/BinL233/my_docs/blob/main/kueue/images/theory-of-operation.png)
 
 ## 一、创建 Resource Flavor
 
@@ -69,7 +69,7 @@ ClusterQueue 用于管理资源，可以定义：
 ClusterQueue 是集群范围的组件，用于管理资源，例如：pods，CPU，内存以及硬件加速器等。
 
 这是 ClusterQueue、ResourceFlavor、Cohort 以及 Node 的关系图：
-![cluster-queue.svg](/kueue/images/cluster-queue.svg)
+![cluster-queue.svg](https://github.com/BinL233/my_docs/blob/main/kueue/images/cluster-queue.svg)
 
 Cohort 是一个组，由 ClusterQueues 组成。在同一个 Cohort 中，ClusterQueue 可以相互借用未使用的资源。ClusterQueue 可以给不同的 flavor 设置不同的配额（CPU, memory, GPUs, pods 等等）。Flavor 代表一个资源的不同变种（例如不同的 GPU 型号）。我们通过 ResourceFlavor 来定义 Flavor 如何映射到一组 Node 中，我们还可以为每一个 Flavor 定义提供的资源量大小，创建如下：
 
@@ -305,7 +305,7 @@ sample-workload             team-a-queue   cluster-queue-1   True               
         reclaimWithinCohort: Any
     ```
     
-    ![cohortPreemption.png](/kueue/images/cohortPreemption.png)
+    ![cohortPreemption.png](https://github.com/BinL233/my_docs/blob/main/kueue/images/cohortPreemption.png)
     
   team-a-cq 的 `borrowingLimit` 为 20，它可以向其他 ClusterQueue 借用 20 cpu，总数可达到 60。
   如果 team-b-cq 需要它自己原本的 10 cpu，team-a-cq 需要释放借来的资源。
@@ -331,7 +331,7 @@ sample-workload             team-a-queue   cluster-queue-1   True               
         withinClusterQueue: LowerPriority
     ```
     
-    ![Prioity.png](/kueue/images/Prioity.png)
+    ![Prioity.png](https://github.com/BinL233/my_docs/blob/main/kueue/images/Prioity.png)
 
   team-a-cq 没有设置 `borrowingLimit`，无法向 team-b-cq 借用资源。
   team-a-cq 只能替换自己的 Workload。
