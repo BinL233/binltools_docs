@@ -2,7 +2,14 @@
     "kueue": {
         "title": "Introduction to Kueue",
         "author": "BinL",
-        "tags": ["kubernetes", "cloud-native"],
+        "tags": ["kubernetes", "cloud-native", "中文"],
+        "category": ""
+    },
+
+    "csi": {
+        "title": "Kubernetes CSI",
+        "author": "BinL",
+        "tags": ["kubernetes", "cloud-native", "中文"],
         "category": ""
     }
 }

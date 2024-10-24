@@ -1,5 +1,3 @@
-# Kueue
-
 Kueue 是一个 kubernetes 原生系统，用于管理 quotas 以及 jobs 如何消耗 quotas。Kueue 决定 job 什么时候应该等待、什么时候应允许 job 启动（如创建 pod）以及 job 什么时候应该抢占作业（如删除活动 pod）。
 Kueue 的优势有：
 - Kueue 不会替换任何 K8s 组件，易于部署。
