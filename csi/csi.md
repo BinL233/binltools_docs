@@ -27,15 +27,15 @@
 ```
 
 1. Controller Create Volume
-    1. Controller 的 Provisioner 监听 PVC，当有新 PVC 出现时，Controller Create Volume。
-    2. 随后 Provisioner 根据 PVC 的请求创建对应 PV。
+    - Controller 的 Provisioner 监听 PVC，当有新 PVC 出现时，Controller Create Volume。
+    - 随后 Provisioner 根据 PVC 的请求创建对应 PV。
 2. Controller Publish Volume
-    1. Controller attach volume，完成云盘和 Node 之间的连接。
+    - Controller attach volume，完成云盘和 Node 之间的连接。
 3. Node Stage Volume
-    1. 先检查 disk 是否已经格式化，如果没有则格式化。
-    2. Node 将设备 mount 到 globalmount。
+    - 先检查 disk 是否已经格式化，如果没有则格式化。
+    - Node 将设备 mount 到 globalmount。
 4. Node Publish Volume
-    1. Node 将 globalmount 和 Pod 中 /data 路径 bind-mount。
+    - Node 将 globalmount 和 Pod 中 /data 路径 bind-mount。
 
 ### Topology (topology-aware dynamic provisioning**)**
 
@@ -59,10 +59,10 @@
 ```
 
 1. Controller Create Volume
-    1. Controller 的 Provisioner 监听 PVC，当有新 PVC 出现时，Controller Create Volume。
-    2. 随后 Provisioner 根据 PVC 的请求创建对应 PV。
+    - Controller 的 Provisioner 监听 PVC，当有新 PVC 出现时，Controller Create Volume。
+    - 随后 Provisioner 根据 PVC 的请求创建对应 PV。
 2. Node Publish Volume
-    1. Node 将 s3 bucket 通过 s3fs 协议 mount 到 Pod 中 /data 路径中。
+    - Node 将 s3 bucket 通过 s3fs 协议 mount 到 Pod 中 /data 路径中。
 
 ### s3fs 协议
 
