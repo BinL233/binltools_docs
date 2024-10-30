@@ -18,5 +18,12 @@
         "author": "BinL",
         "tags": ["git"],
         "category": ""
+    },
+
+    "numa-affinity": {
+        "title": "NUMA Node Affinity Test Report",
+        "author": "BinL",
+        "tags": ["kubernetes", "cloud-native"],
+        "category": ""
     }
 }
