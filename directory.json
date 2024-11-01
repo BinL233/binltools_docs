@@ -1,4 +1,11 @@
 {
+    "numa-affinity": {
+        "title": "NUMA Node Affinity Test Report",
+        "author": "BinL",
+        "tags": ["kubernetes", "cloud-native"],
+        "category": ""
+    },
+
     "kueue": {
         "title": "Introduction to Kueue",
         "author": "BinL",
@@ -17,13 +24,6 @@
         "title": "Git Common Commands",
         "author": "BinL",
         "tags": ["git"],
-        "category": ""
-    },
-
-    "numa-affinity": {
-        "title": "NUMA Node Affinity Test Report",
-        "author": "BinL",
-        "tags": ["kubernetes", "cloud-native"],
         "category": ""
     }
 }
