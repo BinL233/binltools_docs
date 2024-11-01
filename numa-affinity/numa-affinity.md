@@ -79,10 +79,10 @@
 | Condition | 1 task |  2 tasks |
 | --- | --- | --- |
 | CPU not across nodes, GPU not across nodes | Same nodes | Same nodes |
-| CPU across nodes，GPU not across nodes | Same nodes, CPU affinize extra nodes | Mostly random |
-| CPU not across nodes，GPU across nodes | Same nodes, CPU affinize extra nodes | Mostly random |
+| CPU across nodes，GPU not across nodes | Same nodes, CPU affinize extra nodes | Partially random |
+| CPU not across nodes，GPU across nodes | Same nodes, CPU affinize extra nodes | Partially random |
 | CPU across nodes, GPU across nodes (Same number of nodes which CPU & GPU has affinity with) | Same nodes | Same nodes |
-| CPU across nodes，GPU across nodes (Different number of nodes which CPU & GPU has affinity with) | Same nodes, CPU/GPU affinize extra nodes | Mostly random |
+| CPU across nodes，GPU across nodes (Different number of nodes which CPU & GPU has affinity with) | Same nodes, CPU/GPU affinize extra nodes | Partially random |
 
 1. Memory is **not affective** to NUMA nodes affinity.
-2. When the number of NUMA nodes which CPU and GPU has affinity with are different, CPU and GPU can affinize same NUMA nodes **only in the first task**. It is mostly random in other tasks.
+2. When the number of NUMA nodes which CPU and GPU has affinity with are different, CPU and GPU can affinize same NUMA nodes **only in the first task**. It is partially random in other tasks.
