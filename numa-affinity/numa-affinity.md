@@ -17,7 +17,7 @@
 | 20 | 5Gi | 3 | `TopologyAffinityError` |
 
 ### Conclusion
-- Memory is **not affective** to NUMA nodes affinity.
+- Memory **cannot affect** NUMA nodes affinity.
 - Topology manager allows task to bind multi-nodes. But this has the requirement: **The number of node which GPU has affinity with == the number of node with CPU has affinity with**.
 
 ## Best-effort Policy
@@ -84,5 +84,5 @@
 | CPU across nodes, GPU across nodes (Same number of nodes which CPU & GPU has affinity with) | Same nodes | Same nodes |
 | CPU across nodes，GPU across nodes (Different number of nodes which CPU & GPU has affinity with) | Same nodes, CPU/GPU affinize extra nodes | Partially random |
 
-1. Memory is **not affective** to NUMA nodes affinity.
+1. Memory **cannot affect** NUMA nodes affinity.
 2. When the number of NUMA nodes which CPU and GPU has affinity with are different, CPU and GPU can affinize same NUMA nodes **only in the first task**. It is partially random in other tasks.
