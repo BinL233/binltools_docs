@@ -1,10 +1,4 @@
 {
-    "numa-affinity": {
-        "title": "NUMA Node Affinity Test Report",
-        "author": "BinL",
-        "tags": ["kubernetes", "cloud-native"],
-        "category": ""
-    },
 
     "kueue": {
         "title": "Introduction to Kueue",
