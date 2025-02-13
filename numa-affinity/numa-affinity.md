@@ -86,3 +86,6 @@
 
 1. Memory **cannot affect** NUMA nodes affinity.
 2. When the number of NUMA nodes which CPU and GPU has affinity with are different, CPU and GPU can affinize same NUMA nodes **only in the first task**. It is partially random in other tasks.
+
+
+11
