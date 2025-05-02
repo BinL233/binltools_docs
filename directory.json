@@ -1,4 +1,10 @@
 {
+    "GPU": {
+        "title": "GPU & CUDA basic knowledge",
+        "author": "BinL",
+        "tags": ["GPU", "CUDA"],
+        "category": ""
+    },
 
     "kueue": {
         "title": "Introduction to Kueue",
