@@ -1,8 +1,22 @@
 {
-    "GPU": {
+    "gpu": {
         "title": "GPU & CUDA basic knowledge",
         "author": "BinL",
-        "tags": ["GPU", "CUDA"],
+        "tags": ["gpu", "cuda"],
+        "category": ""
+    },
+
+    "machine-program-data": {
+        "title": "Computer System - Machine Program & Data",
+        "author": "BinL",
+        "tags": ["computer-system", "x86", "assembly", "compiler"],
+        "category": ""
+    },
+
+    "bit-integer-floating": {
+        "title": "Computer System - Bit, Integer, Floating",
+        "author": "BinL",
+        "tags": ["computer-system", "x86", "ieee754"],
         "category": ""
     },
 
