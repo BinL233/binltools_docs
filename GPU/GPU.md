@@ -1,6 +1,6 @@
 ## Memory Copy
 
-Memory will copied from CPU to the off-chip memory in GPU first.
+Memory will copied from CPU to the off-chip memory in GPU first. 
 
 ## Streaming Multiprocessor (SM)
 
