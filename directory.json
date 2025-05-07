@@ -6,6 +6,13 @@
         "category": ""
     },
 
+    "exceptional-control-flow": {
+        "title": "Computer System - Exceptional Control Flow",
+        "author": "BinL",
+        "tags": ["computer-system", "x86", "exceptional", "signal", "process"],
+        "category": ""
+    },
+
     "machine-program-data": {
         "title": "Computer System - Machine Program & Data",
         "author": "BinL",
