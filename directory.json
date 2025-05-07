@@ -1,5 +1,5 @@
 {
-    "gpu": {
+    "gpu-cuda": {
         "title": "GPU & CUDA basic knowledge",
         "author": "BinL",
         "tags": ["gpu", "cuda"],
