@@ -1,50 +1,58 @@
 {
-    "gpu-cuda": {
-        "title": "GPU & CUDA basic knowledge",
-        "author": "BinL",
-        "tags": ["gpu", "cuda"],
-        "category": ""
+    "computer-system": {
+        "exceptional-control-flow": {
+            "title": "Computer System - Exceptional Control Flow",
+            "author": "BinL",
+            "tags": ["computer-system", "x86", "exceptional", "signal", "process"],
+            "category": ""
+        },
+    
+        "machine-program-data": {
+            "title": "Computer System - Machine Program & Data",
+            "author": "BinL",
+            "tags": ["computer-system", "x86", "assembly", "compiler"],
+            "category": ""
+        },
+    
+        "bit-integer-floating": {
+            "title": "Computer System - Bit, Integer, Floating",
+            "author": "BinL",
+            "tags": ["computer-system", "x86", "ieee754"],
+            "category": ""
+        }
     },
 
-    "exceptional-control-flow": {
-        "title": "Computer System - Exceptional Control Flow",
-        "author": "BinL",
-        "tags": ["computer-system", "x86", "exceptional", "signal", "process"],
-        "category": ""
+    "cuda": {
+        "gpu-cuda": {
+            "title": "GPU & CUDA basic knowledge",
+            "author": "BinL",
+            "tags": ["gpu", "cuda"],
+            "category": ""
+        }
     },
 
-    "machine-program-data": {
-        "title": "Computer System - Machine Program & Data",
-        "author": "BinL",
-        "tags": ["computer-system", "x86", "assembly", "compiler"],
-        "category": ""
+    "cloud": {
+        "kueue": {
+            "title": "Introduction to Kueue",
+            "author": "BinL",
+            "tags": ["kubernetes", "cloud-native", "sig-scheduling", "kueue"],
+            "category": ""
+        },
+    
+        "csi": {
+            "title": "Kubernetes CSI",
+            "author": "BinL",
+            "tags": ["kubernetes", "cloud-native", "csi"],
+            "category": ""
+        }
     },
 
-    "bit-integer-floating": {
-        "title": "Computer System - Bit, Integer, Floating",
-        "author": "BinL",
-        "tags": ["computer-system", "x86", "ieee754"],
-        "category": ""
-    },
-
-    "kueue": {
-        "title": "Introduction to Kueue",
-        "author": "BinL",
-        "tags": ["kubernetes", "cloud-native", "sig-scheduling", "kueue"],
-        "category": ""
-    },
-
-    "csi": {
-        "title": "Kubernetes CSI",
-        "author": "BinL",
-        "tags": ["kubernetes", "cloud-native", "csi"],
-        "category": ""
-    },
-
-    "git_command": {
-        "title": "Git Common Commands",
-        "author": "BinL",
-        "tags": ["git", "command"],
-        "category": ""
+    "Others": {
+        "git_command": {
+            "title": "Git Common Commands",
+            "author": "BinL",
+            "tags": ["git", "command"],
+            "category": ""
+        }
     }
 }
