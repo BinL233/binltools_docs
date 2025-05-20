@@ -35,3 +35,6 @@
 
 11. List stash
     - `git stash list`
+
+12. Initialize submodule
+    - `git submodule update --init --recursive`
