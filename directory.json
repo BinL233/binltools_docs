@@ -71,6 +71,13 @@
     },
 
     "others": {
+        "golang_basic": {
+            "title": "Golang Basics",
+            "author": "BinL",
+            "tags": ["golang", "programming-language"],
+            "category": ""
+        },
+        
         "git_command": {
             "title": "Git Common Commands",
             "author": "BinL",
