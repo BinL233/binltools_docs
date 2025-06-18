@@ -100,6 +100,10 @@ func main() {
 	// Sort with x[0]
 	sort.Slice(data, func(i, j int) bool {
       return data[i][0] < data[j][0]
+
+	// Copy Array / Slice
+	// Only 1D!
+	copy(new, old)
   })
   
   // Append element at index 0
@@ -192,9 +196,13 @@ func main() {
 	// Convert int to string
 	str := strconv.Itoa(123)
 	fmt.Sprintf("%d", nums[i])
+    
+    // Convert string to slice which contains strings
+    // It will split strings by spaces
+    words := strings.Fields(str)
 	
 	
-	str := "Hello, 世界"
+	str := "Hello, world"
 	fmt.Println("Using byte:")
 	for i := 0; i < len(str); i++ {
 	  fmt.Printf("%c ", str[i]) // Byte
