@@ -1,5 +1,13 @@
 {
     "ebpf": {
+        "ebpf_c4": {
+            "title": "The bpf() System Call",
+            "author": "BinL",
+            "tags": ["ebpf", "system", "kernel", "cloud"],
+            "category": "",
+            "date": "May 27, 2025"
+        },
+
         "ebpf_c3": {
             "title": "Anatomy of an eBPF Program",
             "author": "BinL",
