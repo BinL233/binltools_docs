@@ -95,6 +95,16 @@
         }
     },
 
+    "documentation": {
+        "doc_modifier": {
+            "title": "Doc-modifier Documentation",
+            "author": "BinL",
+            "tags": ["microsoft-word", "documentation", "tutorial", "add-ins", "extension"],
+            "category": "",
+            "date": "Jun 27, 2025"
+        }
+    },
+
     "others": {
         "golang_basic": {
             "title": "Golang Basics",
