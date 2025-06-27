@@ -1,5 +1,5 @@
 ## Introduction
-Doc-modifier is a Microsoft Word add-in. This program specifically developed to assist with the formatting requirements of FDA submission documents.
+Formatter For FDA submission (FFF) is a Microsoft Word add-in. This program specifically developed to assist with the formatting requirements of FDA submission documents.
 
 ## Get Started
 ### 0. Prerequisites

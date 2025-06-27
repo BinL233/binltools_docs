@@ -96,8 +96,8 @@
     },
 
     "documentation": {
-        "doc_modifier": {
-            "title": "Doc-modifier Documentation",
+        "fff": {
+            "title": "Formatter For FDA submission (FFF) Documentation",
             "author": "BinL",
             "tags": ["microsoft-word", "documentation", "tutorial", "add-ins", "extension"],
             "category": "",
