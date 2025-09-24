@@ -34,6 +34,14 @@
     },
 
     "cloud": {
+        "load_balancer": {
+            "title": "Load Balancer",
+            "author": "BinL",
+            "tags": ["kubernetes", "cloud-native", "networks"],
+            "category": "",
+            "date": "Sep 24, 2025"
+        },
+
         "kubernetes_manual": {
             "title": "Kubernetes Manual",
             "author": "BinL",
@@ -106,6 +114,14 @@
     },
 
     "others": {
+        "regular_expressions": {
+            "title": "Regular Expressions",
+            "author": "BinL",
+            "tags": ["regrex", "regular-expressions"],
+            "category": "",
+            "date": "Sep 24, 2025"
+        },
+
         "golang_basic": {
             "title": "Golang Basics",
             "author": "BinL",
