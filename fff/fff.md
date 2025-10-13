@@ -20,11 +20,15 @@ Choose the Operating System (OS) you use and finish the sideloading:
    Reference: [this page](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins).
    1. select the new folder with saved manifest.
    2. Right click -> Show more options -> Give access to -> Specific people
-   3. Select the owner -> Share -> Done. <img width="591" height="418" alt="Screenshot 2025-10-13 141807" src="https://github.com/user-attachments/assets/ff5aa902-a0b5-4840-87bf-d1765276bddd" />
+   3. Select the owner -> Share -> Done. 
+   ![1](images/1.png)
    4. Open Word Options -> Trust Center -> Trust Center Setting -> Trusted Add-in Catalogs
-   5. Right Click saved manifest -> Sharing -> Copy the text under "Network Path" <img width="363" height="481" alt="Screenshot 2025-10-13 151549" src="https://github.com/user-attachments/assets/e791012b-5a48-4616-8dd5-faf01d45de62" />
-   6. Paste the text into "Catalog Url" -> Add catalog -> Check "Show in Menu" -> OK  <img width="813" height="395" alt="Screenshot 2025-10-13 151749" src="https://github.com/user-attachments/assets/37c5eaf8-873b-4896-9683-3af5513dd0d5" />
-   7. Restart the Word -> Open File -> Home -> Add-ins -> Advanced -> "Contoso Task Pane" -> Add -> Show Task Pane <img width="366" height="177" alt="Screenshot 2025-10-13 152018" src="https://github.com/user-attachments/assets/e0f74560-3197-4658-8300-f7434c23e497" />
+   5. Right Click saved manifest -> Sharing -> Copy the text under "Network Path"
+   ![2](images/2.png)
+   6. Paste the text into "Catalog Url" -> Add catalog -> Check "Show in Menu" -> OK
+   ![3](images/3.png)
+   7. Restart the Word -> Open File -> Home -> Add-ins -> Advanced -> "Contoso Task Pane" -> Add -> Show Task Pane
+   ![4](images/4.png)
 3. Linux:
    1. Linux may only use the web version to sideload. Check step 2.4.
 4. Web:
@@ -38,4 +42,5 @@ Choose the Operating System (OS) you use and finish the sideloading:
    Try to clean cache in Word then restart the Word and refresh Add-in.
    1. Win + R -> `%LOCALAPPDATA%`
    2. Direct to `\Microsoft\Office\16.0\Wef`
-   3. Delete the cache files folder <img width="1089" height="440" alt="Screenshot 2025-10-13 154944" src="https://github.com/user-attachments/assets/1d1a5add-fbb3-436e-8808-0291a3bc510a" />
+   3. Delete the cache files folder
+   ![5](images/5.png)
