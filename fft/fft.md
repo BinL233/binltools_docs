@@ -21,14 +21,14 @@ Choose the Operating System (OS) you use and finish the sideloading:
    1. select the new folder with saved manifest.
    2. Right click -> Show more options -> Give access to -> Specific people
    3. Select the owner -> Share -> Done. 
-   ![1](images/1.png)
+   ![1](/fft/images/1.png)
    4. Open Word Options -> Trust Center -> Trust Center Setting -> Trusted Add-in Catalogs
    5. Right Click saved manifest -> Sharing -> Copy the text under "Network Path"
-   ![2](images/2.png)
+   ![2](/fft/images/2.png)
    6. Paste the text into "Catalog Url" -> Add catalog -> Check "Show in Menu" -> OK
-   ![3](images/3.png)
+   ![3](/fft/images/3.png)
    7. Restart the Word -> Open File -> Home -> Add-ins -> Advanced -> "Contoso Task Pane" -> Add -> Show Task Pane
-   ![4](images/4.png)
+   ![4](/fft/images/4.png)
 3. Linux:
    1. Linux may only use the web version to sideload. Check step 2.4.
 4. Web:
@@ -43,4 +43,4 @@ Choose the Operating System (OS) you use and finish the sideloading:
    1. Win + R -> `%LOCALAPPDATA%`
    2. Direct to `\Microsoft\Office\16.0\Wef`
    3. Delete the cache files folder
-   ![5](images/5.png)
+   ![5](/fft/images/5.png)
