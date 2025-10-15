@@ -6,9 +6,18 @@ File Formatting Tool (FFT) is a Microsoft Word add-in. This program is specifica
 1. A machine (iPad, desktop, laptop, VM...) 🙃
 2. Microsoft Word (2016 or later) / Microsoft Word Web
 
-### 1. Download the Manifest
-1. The manifest file is required to access the service. Click [here]() to download.
-2. create a new folder to save the manifest.
+### 1. Download the Certificate and Manifest
+1. Create a new folder to save them.
+2. Click [https://topalliancebiousa.sharepoint.com/:f:/r/sites/TopallianceRA/Regulatory%20Tools/File%20Formatting%20Translator%20(FFT)/001.%20Certificate%20and%20Manifest?csf=1&web=1&e=D6hf2p](001. Certificate and Manifest) to download.
+   
+
+### 2. Import the Certificate to the Local Machine
+1. Double-click the cert and select "Install Certificate".
+      ![1](/fft/images/6.png)  
+2. Select current user / Local Machine (access to all the users).
+3. Select "Place all certificates in the following store". -> Browse -> "Trusted Root Certification Authorities" -> Ok
+      ![1](/fft/images/7.png)  
+5. Pop-up window: "The import is successful".
 
 ### 2. Sideload the Manifest
 Choose the Operating System (OS) you use and finish the sideloading:
