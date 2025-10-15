@@ -8,7 +8,7 @@ File Formatting Tool (FFT) is a Microsoft Word add-in. This program is specifica
 
 ### 1. Download the Certificate and Manifest
 1. Create a new folder to save them.
-2. Click [https://topalliancebiousa.sharepoint.com/:f:/r/sites/TopallianceRA/Regulatory%20Tools/File%20Formatting%20Translator%20(FFT)/001.%20Certificate%20and%20Manifest?csf=1&web=1&e=D6hf2p](001. Certificate and Manifest) to download.
+2. Click [001. Certificate and Manifest](https://topalliancebiousa.sharepoint.com/:f:/r/sites/TopallianceRA/Regulatory%20Tools/File%20Formatting%20Translator%20(FFT)/001.%20Certificate%20and%20Manifest?csf=1&web=1&e=uYJVga) to download.
    
 
 ### 2. Import the Certificate to the Local Machine
@@ -19,7 +19,7 @@ File Formatting Tool (FFT) is a Microsoft Word add-in. This program is specifica
       ![1](/fft/images/7.png)  
 5. Pop-up window: "The import is successful".
 
-### 2. Sideload the Manifest
+### 3. Sideload the Manifest
 Choose the Operating System (OS) you use and finish the sideloading:
 1. **MacOS / iPadOS**:
    1. Use Finder to sideload the manifest file -> Open Finder and then enter `Cmd+Shift+G` to open the Go to folder dialog.
@@ -54,7 +54,7 @@ Choose the Operating System (OS) you use and finish the sideloading:
    3. ~~On the Office Add-ins dialog -> select Upload My Add-in.~~
    4. ~~Browse to the add-in manifest file -> Select Upload.~~
 
-### 3. Add CA cert and Trust
+### 4. Add CA cert and Trust
 1. **MacOS**
    1. Click [here]() to download the CA cert `rootCA.pem`.
    2. Double-click `rootCA.pem`. This will open "Keychain Access".
@@ -62,7 +62,7 @@ Choose the Operating System (OS) you use and finish the sideloading:
    4. Right-click the certificate you just downloaded -> Click "Get Info".
    5. Expand "Trust" -> Set When using this certificate to "Always Trust".
 
-### 4. FAQ
+### 5. FAQ
 1. I can't refresh the FFT, What should I do?
    Try to clean cache in Word then restart the Word and refresh Add-in.
    1. Win + R -> `%LOCALAPPDATA%`
