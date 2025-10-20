@@ -64,8 +64,8 @@ Choose the Operating System (OS) you use and finish the sideloading:
 
 ### 4. FAQ
 1. I can't refresh the FFT, What should I do?
-   Try to clean cache in Word then restart the Word and refresh Add-in.
-   1. Win + R -> `%LOCALAPPDATA%`
-   2. Direct to `\Microsoft\Office\16.0\Wef`
-   3. Delete the cache files folder
-   ![5](/fft/images/5.png)
+   - Try to clean cache in Word then restart the Word and refresh Add-in.
+     1. Win + R -> `%LOCALAPPDATA%`
+     2. Direct to `\Microsoft\Office\16.0\Wef`
+     3. Delete the cache files folder
+     ![5](/fft/images/5.png)
