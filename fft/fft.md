@@ -6,11 +6,20 @@ File Formatting Tool (FFT) is a Microsoft Word add-in. This program is specifica
 1. A machine (iPad, desktop, laptop, VM...) 🙃
 2. Microsoft Word (2016 or later) / Microsoft Word Web
 
-### 1. Download the Manifest
-1. The manifest file is required to access the service. Click [here]() to download.
-2. create a new folder to save the manifest.
+### 1. Download the Certificate and Manifest
+1. Create a new folder to save them.
+2. Click [001. Certificate and Manifest](https://topalliancebiousa.sharepoint.com/:f:/r/sites/TopallianceRA/Regulatory%20Tools/File%20Formatting%20Translator%20(FFT)/001.%20Certificate%20and%20Manifest?csf=1&web=1&e=uYJVga) to download.
+   
 
-### 2. Sideload the Manifest
+### 2. Import the Certificate to the Local Machine
+1. Double-click the cert and select "Install Certificate".
+      ![1](/fft/images/6.png)  
+2. Select current user / Local Machine (access to all the users).
+3. Select "Place all certificates in the following store". -> Browse -> "Trusted Root Certification Authorities" -> Ok
+      ![1](/fft/images/7.png)  
+5. Pop-up window: "The import is successful".
+
+### 3. Sideload the Manifest
 Choose the Operating System (OS) you use and finish the sideloading:
 1. **MacOS / iPadOS**:
    1. Use Finder to sideload the manifest file -> Open Finder and then enter `Cmd+Shift+G` to open the Go to folder dialog.
@@ -45,7 +54,7 @@ Choose the Operating System (OS) you use and finish the sideloading:
    3. ~~On the Office Add-ins dialog -> select Upload My Add-in.~~
    4. ~~Browse to the add-in manifest file -> Select Upload.~~
 
-### 3. Add CA cert and Trust
+### 4. Add CA cert and Trust
 1. **MacOS**
    1. Click [here]() to download the CA cert `rootCA.pem`.
    2. Double-click `rootCA.pem`. This will open "Keychain Access".
@@ -54,10 +63,9 @@ Choose the Operating System (OS) you use and finish the sideloading:
    5. Expand "Trust" -> Set When using this certificate to "Always Trust".
 
 ### 4. FAQ
-1. **I can't refresh the FFT, What should I do?**
-   
-   - Try to clean cache in Word then restart the Word and refresh Add-in.
-      1. Win + R -> `%LOCALAPPDATA%`
-      2. Direct to `\Microsoft\Office\16.0\Wef`
-      3. Delete the cache files folder
-      ![5](/fft/images/5.png)
+1. I can't refresh the FFT, What should I do?
+   Try to clean cache in Word then restart the Word and refresh Add-in.
+   1. Win + R -> `%LOCALAPPDATA%`
+   2. Direct to `\Microsoft\Office\16.0\Wef`
+   3. Delete the cache files folder
+   ![5](/fft/images/5.png)
