@@ -22,7 +22,9 @@ File Formatting Tool (FFT) is a Microsoft Word add-in. This program is specifica
 
 2. **Windows**
    1. Double-click the cert and select "Install Certificate".
+
       ![1](/fft/images/6.png)  
+      
    2. Select current user / Local Machine (access to all the users).
    3. Select "Place all certificates in the following store". -> Browse -> "Trusted Root Certification Authorities" -> Ok
       ![1](/fft/images/7.png)  
