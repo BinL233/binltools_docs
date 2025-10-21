@@ -62,9 +62,17 @@ File Formatting Tool (FFT) is a Microsoft Word add-in. This program is specifica
 
 
 ### 4. FAQ
-1. I can't refresh the FFT, What should I do?
+1. I can't refresh the FFT / no response of FFT.
    - Try to clean cache in Word then restart the Word and refresh Add-in.
      1. Win + R -> `%LOCALAPPDATA%`
      2. Direct to `\Microsoft\Office\16.0\Wef`
      3. Delete the cache files folder
      ![5](/fft/images/5.png)
+
+2. Heading indent is incorrect (as following) when I start FFT.
+   ![1](/fft/images/8.png)
+   - Define the multi-level list before start formatting.
+   1. Select the heading and number
+   2. Multi-level list ![1](/fft/images/10.png)
+   3. Define New Multilevel List -> Ok
+   ![1](/fft/images/9.png)
