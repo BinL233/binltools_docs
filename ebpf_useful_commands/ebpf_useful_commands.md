@@ -13,4 +13,10 @@ sudo bpftool net
 
 # Delete program
 sudo rm -f /sys/fs/bpf/links/...
+
+# Shows every map currently loaded in the kernel
+sudo bpftool map show
+
+# Dump the certain map
+sudo bpftool map dump id 123
 ```
