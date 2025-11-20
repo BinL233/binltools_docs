@@ -1,9 +1,17 @@
 {
     "ebpf": {
+        "ebpf_useful_commands": {
+            "title": "eBPF Useful Commands",
+            "author": "BinL",
+            "tags": ["ebpf", "system", "kernel", "linux"],
+            "category": "",
+            "date": "Nov 20, 2025"
+        },
+
         "ebpf_c4": {
             "title": "The bpf() System Call",
             "author": "BinL",
-            "tags": ["ebpf", "system", "kernel", "cloud"],
+            "tags": ["ebpf", "system", "kernel", "linux"],
             "category": "",
             "date": "May 27, 2025"
         },
@@ -11,7 +19,7 @@
         "ebpf_c3": {
             "title": "Anatomy of an eBPF Program",
             "author": "BinL",
-            "tags": ["ebpf", "system", "kernel", "cloud"],
+            "tags": ["ebpf", "system", "kernel", "linux"],
             "category": "",
             "date": "May 20, 2025"
         },
@@ -19,7 +27,7 @@
         "ebpf_c2": {
             "title": "eBPF's 'Hello World'",
             "author": "BinL",
-            "tags": ["ebpf", "system", "kernel", "cloud"],
+            "tags": ["ebpf", "system", "kernel", "linux"],
             "category": "",
             "date": "May 20, 2025"
         },
