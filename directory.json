@@ -1,5 +1,13 @@
 {
     "ebpf": {
+        "ebpf_net_term": {
+            "title": "eBPF & Networks Terminologies",
+            "author": "BinL",
+            "tags": ["ebpf", "system", "kernel", "linux", "networks"],
+            "category": "",
+            "date": "Nov 20, 2025"
+        },
+
         "ebpf_useful_commands": {
             "title": "eBPF Useful Commands",
             "author": "BinL",
