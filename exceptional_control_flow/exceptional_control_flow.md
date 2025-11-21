@@ -19,7 +19,7 @@ Exists at all levels of a computer system
         - Implemented by C runtime library
 
 ### Exceptions
-![exceptional](/exceptional-control-flow/images/exceptional.png)
+![exceptional](/exceptional_control_flow/images/exceptional.png)
 *From CS:APP*
 
 ### Asynchronous Exceptions (Interrupts)

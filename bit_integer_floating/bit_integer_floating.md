@@ -40,7 +40,7 @@
 
 ## Floating Point
 
-![IEEE754](/computer_system/images/IEEE754.png)
+![IEEE754](/bit_integer_floating/images/IEEE754.png)
 
 ### Float Point Representation
 

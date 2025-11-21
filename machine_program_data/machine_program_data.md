@@ -77,7 +77,7 @@
 
 ### C to Object code
 
-![c-to-object-code](/machine-program-data/images/c_to_object_code.png)
+![c-to-object-code](/machine_program_data/images/c_to_object_code.png)
 
 ### Condition Code
 
