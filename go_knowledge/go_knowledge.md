@@ -1,9 +1,9 @@
-## 1\. Shallow Copy vs. Deep Copy
+## 1. Shallow Copy vs. Deep Copy
 
   * **Shallow Copy:** Only adds a pointer pointing to existing memory (allocates memory for the pointer itself).
   * **Deep Copy:** Adds a pointer *and* allocates new memory for the data, making the new pointer point to this new memory (allocates memory for both the pointer and the value).
 
-## 2\. Reading and Writing in Different Channel States
+## 2. Reading and Writing in Different Channel States
 
 | Channel State | Read | Write |
 | :--- | :--- | :--- |
@@ -13,7 +13,7 @@
 | **No Data** | Blocks until new data is written | Normal |
 | **Full Buffer** | Normal | Blocks until data is read |
 
-## 3\. `len` and `cap` for Channel, Array, and Slice
+## 3. `len` and `cap` for Channel, Array, and Slice
 
   * **Channel**
       * `len`: Number of elements currently in the channel buffer.
@@ -26,7 +26,7 @@
       * `cap`: Capacity of the slice (`cap` ≥ `len`).
       * *Note: `cap` == `len` upon initialization if not specified.*
 
-## 4\. Channel Internal Principles
+## 4. Channel Internal Principles
 
 **Structure:**
 
@@ -55,17 +55,17 @@ type hchan struct {
       * When a sender Goroutine performs `<-chan`, if no receiver is waiting, it blocks in `sendq`.
       * Similarly, a receiver blocks in `recvq` if there is no sender.
 
-## 5\. Scenarios Triggering a Panic in Channels
+## 5. Scenarios Triggering a Panic in Channels
 
   * Closing a `nil` Channel.
   * Closing an already closed Channel.
   * Writing data to an already closed Channel.
 
-## 6\. The Role of Channels in Go
+## 6. The Role of Channels in Go
 
   * Channels are the mechanism for communication between Goroutines (CSP Model).
 
-## 7\. Slice Internal Principles
+## 7. Slice Internal Principles
 
 ```go
 type SliceHeader struct {
@@ -75,12 +75,12 @@ type SliceHeader struct {
 }
 ```
 
-## 8\. Slice Expansion Rules
+## 8. Slice Expansion Rules
 
   * If original capacity \< 1024: The Slice expands to **2x** the original size.
   * If original capacity ≥ 1024: The Slice expands to **1.25x** the original size.
 
-## 9\. Map Internal Principles
+## 9. Map Internal Principles
 
 ```go
 type hmap struct {
@@ -103,7 +103,7 @@ type bmap struct {
 }
 ```
 
-## 10\. Map Expansion Mechanism
+## 10. Map Expansion Mechanism
 
   * **Triggers:**
 
@@ -122,7 +122,7 @@ type bmap struct {
       * Does not increase capacity (bucket count remains the same).
       * Rearranges loose key-value pairs to make bucket usage more efficient (handling deleted holes).
 
-## 11\. Map CRUD Processes
+## 11. Map CRUD Processes
 
   * **Lookup Process:**
 
@@ -159,7 +159,7 @@ type bmap struct {
       * Can allocate memory for any type.
       * Returns a **pointer** to the variable (zeroed memory).
 
-## 13\. What is a Goroutine?
+## 13. What is a Goroutine?
 
   * A lightweight thread.
   * Not scheduled by the OS.
@@ -168,12 +168,12 @@ type bmap struct {
   * The Goroutine scheduler is provided by the `runtime` package.
   * Mapping relationship between Goroutines and Kernel Threads: **M:N**.
 
-## 14\. Advantages of Goroutines
+## 14. Advantages of Goroutines
 
   * Works in User Mode, reducing the overhead of context switching.
   * Switching Goroutines only requires saving/restoring a few registers and the stack pointer, avoiding Kernel Mode switching.
 
-## 15\. GMP Model
+## 15. GMP Model
 
 **Key Entities:**
 
@@ -213,7 +213,7 @@ type bmap struct {
   * Prevents a single **G** from running too long.
   * The scheduler monitors execution time; if too long and others are waiting, it pauses the current **G** and schedules another.
 
-## 16\. GC (Garbage Collection) Strategies
+## 16. GC (Garbage Collection) Strategies
 
 1.  **Reference Counting (e.g., Swift):** Maintains a count for every object. When count is 0, recycle.
       * *Pros:* Fast recycling.
@@ -225,19 +225,19 @@ type bmap struct {
       * *Pros:* High performance.
       * *Cons:* Complex algorithm.
 
-## 17\. Go GC Trigger Timing
+## 17. Go GC Trigger Timing
 
 1.  **Memory Threshold:** When current memory allocation reaches the threshold (`Last GC amount * Growth Rate`).
 2.  **Periodic:** Triggered at least every 2 minutes.
 3.  **Manual:** `runtime.GC()`.
 
-## 18\. Tricolor Marking (Go)
+## 18. Tricolor Marking (Go)
 
   * **Grey:** Object is in the marking queue waiting to be scanned.
   * **Black:** Marked and scanned. `gcmarkBits` is 1 (Will not be cleaned in this GC).
   * **White:** Not marked. `gcmarkBits` is 0 (Will be cleaned in this GC).
 
-## 19\. WaitGroup
+## 19. WaitGroup
 
 **Flow:**
 
@@ -282,7 +282,7 @@ func main() {
 }
 ```
 
-## 20\. Types of Locks in Go & Scenarios
+## 20. Types of Locks in Go & Scenarios
 
   * **Mutex (`sync.Mutex`):** Ensures only one goroutine can access a resource at a time.
   * **Read-Write Lock (`sync.RWMutex`):** Based on Mutex. Suitable for scenarios with **many reads and few writes**.
