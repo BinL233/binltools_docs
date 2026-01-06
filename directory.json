@@ -148,6 +148,14 @@
     },
 
     "others": {
+        "algorithm": {
+            "title": "Algorithms",
+            "author": "BinL",
+            "tags": ["algorithm"],
+            "category": "",
+            "date": "Jan 6, 2026"
+        },
+
         "regular_expressions": {
             "title": "Regular Expressions",
             "author": "BinL",
