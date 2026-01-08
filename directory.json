@@ -1,4 +1,31 @@
 {
+    "file_formatting_tool_(fft)": {
+        "fft_deployment": {
+            "title": "FFT One Time Deployment",
+            "author": "BinL, XNie7",
+            "tags": ["microsoft-word", "documentation", "tutorial", "add-ins", "extension"],
+            "category": "",
+            "date": "Jun 27, 2025"
+        },
+
+        "fft_user_guide": {
+            "title": "FFT User Guide",
+            "author": "BinL, XNie7",
+            "tags": ["microsoft-word", "documentation", "tutorial", "add-ins", "extension"],
+            "category": "",
+            "date": "Nov 11, 2025"
+        },
+
+        "fft_faq": {
+            "title": "FFT FAQ",
+            "author": "BinL, XNie7",
+            "tags": ["microsoft-word", "documentation", "tutorial", "add-ins", "extension"],
+            "category": "",
+            "date": "Dec 22, 2025"
+        }
+
+    },
+
     "ebpf": {
         "ebpf_net_term": {
             "title": "eBPF & Networks Terminologies",
@@ -116,16 +143,6 @@
             "tags": ["gpu", "cuda"],
             "category": "",
             "date": "Mar 20, 2025"
-        }
-    },
-
-    "documentation": {
-        "fft": {
-            "title": "File Formating Tool (FFT) Documentation",
-            "author": "BinL, XNie7",
-            "tags": ["microsoft-word", "documentation", "tutorial", "add-ins", "extension"],
-            "category": "",
-            "date": "Jun 27, 2025"
         }
     },
 

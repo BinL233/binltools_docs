@@ -7,8 +7,8 @@ File Formatting Tool (FFT) is a Microsoft Word add-in. This program is specifica
 2. Microsoft Word (2016 or later) / Microsoft Word Web
 
 ### 1. Download the Certificate and Manifest
-1. Create a new folder to save them.
-2. Click [001. Certificate and Manifest](https://topalliancebiousa.sharepoint.com/:f:/r/sites/TopallianceRA/Regulatory%20Tools/File%20Formatting%20Translator%20(FFT)/001.%20Certificate%20and%20Manifest?csf=1&web=1&e=uYJVga) to download.
+1. Click [001. Certificate and Manifest](https://topalliancebiousa.sharepoint.com/:f:/r/sites/TopallianceRA/Regulatory%20Tools/File%20Formatting%20Translator%20(FFT)/001.%20Certificate%20and%20Manifest?csf=1&web=1&e=uYJVga) to download.
+2. Save the certificate and manifest in a folder.
    
 
 ### 2. Import the Certificate to the Local Machine
@@ -62,17 +62,19 @@ File Formatting Tool (FFT) is a Microsoft Word add-in. This program is specifica
 
 
 ### 4. FAQ
-1. I can't refresh the FFT / no response of FFT.
-   - Try to clean cache in Word then restart the Word and refresh Add-in.
+1. No response / refresh / update of FFT.
+   - Try to clean cache then restart the FFT.
      1. Win + R -> `%LOCALAPPDATA%`
      2. Direct to `\Microsoft\Office\16.0\Wef`
-     3. Delete the cache files folder
+     3. Delete all the cache files in this folder.
      ![5](/fft/images/5.png)
+     4. Close all the Word documents and restart.
 
-2. Heading indent is incorrect (as following) when I start FFT.
+2. Heading indent is incorrect (as following) when starting FFT.
    ![1](/fft/images/8.png)
-   - Define the multi-level list before start formatting.
+   - Define the multi-level list at the beginning.
    1. Select the heading and number
    2. Multi-level list ![1](/fft/images/10.png)
    3. Define New Multilevel List -> Ok
    ![1](/fft/images/9.png)
+   4. 
