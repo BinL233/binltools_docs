@@ -5,7 +5,7 @@
             "author": "BinL, XNie7",
             "tags": ["microsoft-word", "documentation", "tutorial", "add-ins", "extension"],
             "category": "",
-            "date": "Jun 27, 2025"
+            "date": "Nov 15, 2025"
         },
 
         "fft_user_guide": {
@@ -13,7 +13,7 @@
             "author": "BinL, XNie7",
             "tags": ["microsoft-word", "documentation", "tutorial", "add-ins", "extension"],
             "category": "",
-            "date": "Nov 11, 2025"
+            "date": "Jan 9, 2026"
         },
 
         "fft_faq": {
@@ -21,7 +21,7 @@
             "author": "BinL, XNie7",
             "tags": ["microsoft-word", "documentation", "tutorial", "add-ins", "extension"],
             "category": "",
-            "date": "Dec 22, 2025"
+            "date": "Feb 27, 2026"
         }
 
     },
@@ -165,14 +165,6 @@
     },
 
     "others": {
-        "algorithm": {
-            "title": "Algorithms",
-            "author": "BinL",
-            "tags": ["algorithm"],
-            "category": "",
-            "date": "Jan 6, 2026"
-        },
-
         "regular_expressions": {
             "title": "Regular Expressions",
             "author": "BinL",
