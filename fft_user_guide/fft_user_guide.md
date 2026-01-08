@@ -1,80 +1,121 @@
 ## Introduction
-File Formatting Tool (FFT) is a Microsoft Word add-in. This program is specifically developed to assist with the formatting requirements of the health authorities' submission.
 
-## Get Started
-### 0. Prerequisites
-1. A machine (iPad, desktop, laptop, VM...) 🙃
-2. Microsoft Word (2016 or later) / Microsoft Word Web
+File Formatting Tool (FFT) is a Microsoft Word add-in designed to improve efficiency, consistency, and accuracy when formatting documents for health authority submissions. 
 
-### 1. Download the Certificate and Manifest
-1. Click [001. Certificate and Manifest](https://topalliancebiousa.sharepoint.com/:f:/r/sites/TopallianceRA/Regulatory%20Tools/File%20Formatting%20Translator%20(FFT)/001.%20Certificate%20and%20Manifest?csf=1&web=1&e=uYJVga) to download.
-2. Save the certificate and manifest in a folder.
-   
+FFT is especially useful for regulatory documents that:
+- Under eCTD structure
+- Contain extensive tables, figures, and cross-references
+- Frequent revisions and re-formatting
 
-### 2. Import the Certificate to the Local Machine
-1. **MacOS**
-   1. Click [here]() to download the CA cert `rootCA.pem`.
-   2. Double-click `rootCA.pem`. This will open "Keychain Access".
-   3. Select "System" keychain (top left).
-   4. Right-click the certificate you just downloaded -> Click "Get Info".
-   5. Expand "Trust" -> Set When using this certificate to "Always Trust".
+Three Advantages:
+1. Works directly inside Word
+2. Applies to any Word documents
+3. Keyboard-driven shortcuts
+
+Once FFT is opened in Word, it appears as a task pane on the right side of the document.
+
+## Settings
+
+It is designed to help users get oriented, access documentation, and understand the Shortcut function before applying any formatting. 
+Click the Setting icon in the top-right corner of the FFT pane. 
+
+From here, users can manage:
+- About - check documentation (User Guide), version and contact developer.
+- Notification - enable or disable the notification for each action.
+- Shortcuts - customize shortcut keys based on preference or reset to default. See 2.1 for more details.
+
+## Step 1 Configure
+Step 1 defines how FFT will prepare the document before formatting begins. 
+This step allows users to load a predefined FFT template, control layout elements, and set page margins.
+
+### 1.1 Select Module
+At the top of Step 1, select the appropriate module or category from the dropdown list (for example, Module 2.5 – Clinical Overview).
+The predefined style will be auto-added to the document and ready for use in the future steps.
+
+### 1.2 Load and Configure
+Load & Configure controls whether FFT should apply its predefined template to the document.
+
+- ON (recommended for first use):
+   Loads FFT-defined header, footer, and styles
+   Initializes the document with the selected module template
+
+- OFF (recommended when reopening documents):
+   Keeps the existing FFT configuration
+   Allows users to proceed directly to Step 2
+
+💡 Tip: If the document already contains an FFT template, turning this option OFF prevents unnecessary reloading.
+
+### 1.3 Load Header / Load Footer
+These options allow fine control over whether FFT should overwrite existing headers and footers.
+
+- Load Header
+   ON: FFT applies the predefined header from the selected module
+   OFF: Keeps the document’s existing header unchanged
+
+- Load Footer
+   ON: FFT applies the predefined footer from the selected module
+   OFF: Keeps the document’s existing footer unchanged
+
+Recommended usage
+Turn OFF these options if:
+- The document already contains an approved or validated header/footer
+- You are working on a late-stage document and want to preserve layout
+
+### 1.4 Page Margin Settings
+Users can manually define page margins (in inches):
+- Top Margin
+- Bottom Margin
+- Left Margin
+- Right Margin
 
 
-2. **Windows**
-   1. Double-click the cert and select "Install Certificate".
 
-      ![1](/fft/images/6.png)  
-      
-   2. Select current user / Local Machine (access to all the users).
-   3. Select "Place all certificates in the following store". -> Browse -> "Trusted Root Certification Authorities" -> Ok
-      ![1](/fft/images/7.png)  
-   4. Pop-up window: "The import was successful".
+## Step 2 Format
 
+### 2.1 Styles
 
-### 3. Sideload the Manifest
-1. **MacOS / iPadOS**:
-   1. Use Finder to sideload the manifest file -> Open Finder and then enter `Cmd+Shift+G` to open the Go to folder dialog.
-   2. Enter `/Users/<username>/Library/Containers/com.microsoft.Word/Data/Documents/wef`.
-   3. If the wef folder doesn't exist on your computer, create it.
+### 2.2 Shortcuts
 
+The Keyboard-driven shortcuts is one of the most distinctive and powerful features of FFT. It allows users to format paragraph entirely by keyboard, significantly improve efficiency and eliminate repetitive formatting tasks.
 
-2. **Windows**: 
-   *Reference: [this page](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins).*
-   1. select the new folder with saved manifest.
-   2. Right click -> Show more options -> Give access to -> Specific people
-   3. Select the owner -> Share -> Done. 
-   
-      ![1](/fft/images/1.png)
-   
-   4. Right Click saved manifest -> Sharing -> Copy the text under "Network Path"
-   
-      ![2](/fft/images/2.png)
+Three Key principles:
+1. Pre-defined Word Styles - all shortcuts applied one key to one style, and aligned with health authority eCTD expectations.
+2. Sequential Traversal - one paragraph at a time, auto-skip all the table and figure, focus on plain-text only.
+3. Shortcut Mode - active only when the floating window is in green with "Shortcut On" and apply only to the navigated paragraph.
 
-   5. Open Word Options -> Trust Center -> Trust Center Setting -> Trusted Add-in Catalogs
-   
-   6. Paste the text into "Catalog Url" -> Add catalog -> Check "Show in Menu" -> OK
-   
-      ![3](/fft/images/3.png)
-   
-   7. Restart the Word -> Open File -> Home -> Add-ins -> Advanced -> "Contoso Task Pane" -> Add -> Show Task Pane
-   
-      ![4](/fft/images/4.png)
+#### 2.2.1 Step by Step Instruction
 
+1. Place the Cursor
+   Click anywhere inside the paragraph that needs to be formatted. The cursor should be inside plain text, not a table or figure.
 
-### 4. FAQ
-1. No response / refresh / update of FFT.
-   - Try to clean cache then restart the FFT.
-     1. Win + R -> `%LOCALAPPDATA%`
-     2. Direct to `\Microsoft\Office\16.0\Wef`
-     3. Delete all the cache files in this folder.
-     ![5](/fft/images/5.png)
-     4. Close all the Word documents and restart.
+2. Activate Shortcut Mode
+   Move your cursor to the FFT pane, click and the floating window will change from "Shortcut Off" (grey) to "Shortcut On" (green). 
+   This indicate that keyboard shortcuts are now active.
 
-2. Heading indent is incorrect (as following) when starting FFT.
-   ![1](/fft/images/8.png)
-   - Define the multi-level list at the beginning.
-   1. Select the heading and number
-   2. Multi-level list ![1](/fft/images/10.png)
-   3. Define New Multilevel List -> Ok
-   ![1](/fft/images/9.png)
-   4. 
+3. Navigate to the current paragraph
+   Press [N] on the keyboard.
+   FFT will navigate to the paragraph containing your cursor and the paragraph will become selected in grey.
+
+4. Apply the Desired Style
+   Press the corresponding shortcut key to apply a style.
+   The shortcut key will appear in the parentheses with grey in the Step 2 Format section, under 2.1 Styles buttons.
+
+5. Move to the Next paragraph
+   Press [→] to move to the next paragraph.
+   Repeat step 4 and 5 until the entire document is formatted.
+
+#### 2.2.2 Default Navigation Shortcuts
+   [N] – Navigate to the currently selected location
+   [←] - Move to the previous paragraph
+   [→] - Move to the next paragraph
+   [X] - Normal (justify)
+   [C] - Normal 2 (align left)
+   [1~5] - Heading 1 to Heading 5
+   [6] - Table title
+   [7] - Figure title
+   [B] - Bullets
+   [V] - Numbering
+
+### 2.3 Fix Tables
+
+### 2.4 Fix Symbols

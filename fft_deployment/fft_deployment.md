@@ -1,5 +1,9 @@
 ## Introduction
-File Formatting Tool (FFT) is a Microsoft Word add-in. This program is specifically developed to assist with the formatting requirements of the health authorities' submission.
+File Formatting Tool (FFT) is a Microsoft Word add-in designed to improve efficiency, consistency, and accuracy when formatting documents for health authority submissions.
+
+This section describes the one-time deployment process required to install FFT on a local machine and required two steps: Installing a trusted certificate on the local machine, and Sideloading the add-in manifest into Microsoft Word.
+
+The deployment process is required only once per device. After deployment, users may proceed directly to the FFT User Guide for daily use.
 
 ## Get Started
 ### 0. Prerequisites
@@ -23,11 +27,11 @@ File Formatting Tool (FFT) is a Microsoft Word add-in. This program is specifica
 2. **Windows**
    1. Double-click the cert and select "Install Certificate".
 
-      ![1](/fft/images/6.png)  
+      ![1](/fft_deployment/images/6.png)  
       
    2. Select current user / Local Machine (access to all the users).
    3. Select "Place all certificates in the following store". -> Browse -> "Trusted Root Certification Authorities" -> Ok
-      ![1](/fft/images/7.png)  
+      ![1](/fft_deployment/images/7.png)  
    4. Pop-up window: "The import was successful".
 
 
@@ -44,18 +48,18 @@ File Formatting Tool (FFT) is a Microsoft Word add-in. This program is specifica
    2. Right click -> Show more options -> Give access to -> Specific people
    3. Select the owner -> Share -> Done. 
    
-      ![1](/fft/images/1.png)
+      ![1](/fft_deployment/images/1.png)
    
    4. Right Click saved manifest -> Sharing -> Copy the text under "Network Path"
    
-      ![2](/fft/images/2.png)
+      ![2](/fft_deployment/images/2.png)
 
    5. Open Word Options -> Trust Center -> Trust Center Setting -> Trusted Add-in Catalogs
    
    6. Paste the text into "Catalog Url" -> Add catalog -> Check "Show in Menu" -> OK
    
-      ![3](/fft/images/3.png)
+      ![3](/fft_deployment/images/3.png)
    
    7. Restart the Word -> Open File -> Home -> Add-ins -> Advanced -> "Contoso Task Pane" -> Add -> Show Task Pane
    
-      ![4](/fft/images/4.png)
+      ![4](/fft_deployment/images/4.png)
