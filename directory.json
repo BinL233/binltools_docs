@@ -1,192 +1,212 @@
 {
     "file_formatting_tool_(fft)": {
-        "fft_deployment": {
-            "title": "FFT One Time Deployment",
-            "author": "BinL, XNie7",
-            "tags": ["microsoft-word", "documentation", "tutorial", "add-ins", "extension"],
-            "category": "",
-            "date": "Nov 15, 2025"
-        },
+        "title": "File Formatting Tool (FFT)",
+        "articles": {
+            "fft_deployment": {
+                "title": "FFT One Time Deployment",
+                "author": "BinL, XNie7",
+                "tags": ["microsoft-word", "documentation", "tutorial", "add-ins", "extension"],
+                "category": "",
+                "date": "Nov 15, 2025"
+            },
 
-        "fft_user_guide": {
-            "title": "FFT User Guide",
-            "author": "BinL, XNie7",
-            "tags": ["microsoft-word", "documentation", "tutorial", "add-ins", "extension"],
-            "category": "",
-            "date": "Jan 9, 2026"
-        },
+            "fft_user_guide": {
+                "title": "FFT User Guide",
+                "author": "BinL, XNie7",
+                "tags": ["microsoft-word", "documentation", "tutorial", "add-ins", "extension"],
+                "category": "",
+                "date": "Jan 9, 2026"
+            },
 
-        "fft_faq": {
-            "title": "FFT FAQ",
-            "author": "BinL, XNie7",
-            "tags": ["microsoft-word", "documentation", "tutorial", "add-ins", "extension"],
-            "category": "",
-            "date": "Feb 27, 2026"
+            "fft_faq": {
+                "title": "FFT FAQ",
+                "author": "BinL, XNie7",
+                "tags": ["microsoft-word", "documentation", "tutorial", "add-ins", "extension"],
+                "category": "",
+                "date": "Feb 27, 2026"
+            }
         }
-
     },
 
     "ebpf": {
-        "ebpf_net_term": {
-            "title": "eBPF & Networks Terminologies",
-            "author": "BinL",
-            "tags": ["ebpf", "system", "kernel", "linux", "networks"],
-            "category": "",
-            "date": "Nov 20, 2025"
-        },
+        "title": "EBPF",
+        "articles": {
+            "ebpf_net_term": {
+                "title": "eBPF & Networks Terminologies",
+                "author": "BinL",
+                "tags": ["ebpf", "system", "kernel", "linux", "networks"],
+                "category": "",
+                "date": "Nov 20, 2025"
+            },
 
-        "ebpf_useful_commands": {
-            "title": "eBPF Useful Commands",
-            "author": "BinL",
-            "tags": ["ebpf", "system", "kernel", "linux"],
-            "category": "",
-            "date": "Nov 20, 2025"
-        },
+            "ebpf_useful_commands": {
+                "title": "eBPF Useful Commands",
+                "author": "BinL",
+                "tags": ["ebpf", "system", "kernel", "linux"],
+                "category": "",
+                "date": "Nov 20, 2025"
+            },
 
-        "ebpf_c4": {
-            "title": "The bpf() System Call",
-            "author": "BinL",
-            "tags": ["ebpf", "system", "kernel", "linux"],
-            "category": "",
-            "date": "May 27, 2025"
-        },
+            "ebpf_c4": {
+                "title": "The bpf() System Call",
+                "author": "BinL",
+                "tags": ["ebpf", "system", "kernel", "linux"],
+                "category": "",
+                "date": "May 27, 2025"
+            },
 
-        "ebpf_c3": {
-            "title": "Anatomy of an eBPF Program",
-            "author": "BinL",
-            "tags": ["ebpf", "system", "kernel", "linux"],
-            "category": "",
-            "date": "May 20, 2025"
-        },
+            "ebpf_c3": {
+                "title": "Anatomy of an eBPF Program",
+                "author": "BinL",
+                "tags": ["ebpf", "system", "kernel", "linux"],
+                "category": "",
+                "date": "May 20, 2025"
+            },
 
-        "ebpf_c2": {
-            "title": "eBPF's 'Hello World'",
-            "author": "BinL",
-            "tags": ["ebpf", "system", "kernel", "linux"],
-            "category": "",
-            "date": "May 20, 2025"
-        },
+            "ebpf_c2": {
+                "title": "eBPF's 'Hello World'",
+                "author": "BinL",
+                "tags": ["ebpf", "system", "kernel", "linux"],
+                "category": "",
+                "date": "May 20, 2025"
+            },
 
-        "ebpf_c1": {
-            "title": "What Is eBPF, and Why Is It Important?",
-            "author": "BinL",
-            "tags": ["ebpf", "system", "kernel", "cloud"],
-            "category": "",
-            "date": "May 20, 2025"
+            "ebpf_c1": {
+                "title": "What Is eBPF, and Why Is It Important?",
+                "author": "BinL",
+                "tags": ["ebpf", "system", "kernel", "cloud"],
+                "category": "",
+                "date": "May 20, 2025"
+            }
         }
     },
 
     "cloud": {
-        "load_balancer": {
-            "title": "Load Balancer",
-            "author": "BinL",
-            "tags": ["kubernetes", "cloud-native", "networks"],
-            "category": "",
-            "date": "Sep 24, 2025"
-        },
+        "title": "Cloud",
+        "articles": {
+            "load_balancer": {
+                "title": "Load Balancer",
+                "author": "BinL",
+                "tags": ["kubernetes", "cloud-native", "networks"],
+                "category": "",
+                "date": "Sep 24, 2025"
+            },
 
-        "kubernetes_manual": {
-            "title": "Kubernetes Manual",
-            "author": "BinL",
-            "tags": ["kubernetes", "cloud-native"],
-            "category": "",
-            "date": "Sep 22, 2024"
-        },
+            "kubernetes_manual": {
+                "title": "Kubernetes Manual",
+                "author": "BinL",
+                "tags": ["kubernetes", "cloud-native"],
+                "category": "",
+                "date": "Sep 22, 2024"
+            },
 
-        "csi": {
-            "title": "Kubernetes CSI",
-            "author": "BinL",
-            "tags": ["kubernetes", "cloud-native", "csi"],
-            "category": "",
-            "date": "Oct 24, 2024"
-        },
+            "csi": {
+                "title": "Kubernetes CSI",
+                "author": "BinL",
+                "tags": ["kubernetes", "cloud-native", "csi"],
+                "category": "",
+                "date": "Oct 24, 2024"
+            },
 
-        "kueue": {
-            "title": "Introduction to Kueue",
-            "author": "BinL",
-            "tags": ["kubernetes", "cloud-native", "sig-scheduling", "kueue"],
-            "category": "",
-            "date": "Jul 19, 2023"
+            "kueue": {
+                "title": "Introduction to Kueue",
+                "author": "BinL",
+                "tags": ["kubernetes", "cloud-native", "sig-scheduling", "kueue"],
+                "category": "",
+                "date": "Jul 19, 2023"
+            }
         }
     },
 
     "computer_system": {
-        "exceptional_control_flow": {
-            "title": "Computer System - Exceptional Control Flow",
-            "author": "BinL",
-            "tags": ["computer-system", "x86", "exceptional", "signal", "process"],
-            "category": "",
-            "date": "May 5, 2025"
-        },
-    
-        "machine_program_data": {
-            "title": "Computer System - Machine Program & Data",
-            "author": "BinL",
-            "tags": ["computer-system", "x86", "assembly", "compiler"],
-            "category": "",
-            "date": "May 4, 2025"
-        },
-    
-        "bit_integer_floating": {
-            "title": "Computer System - Bit, Integer, Floating",
-            "author": "BinL",
-            "tags": ["computer-system", "x86", "ieee754"],
-            "category": "",
-            "date": "May 4, 2025"
+        "title": "Computer System",
+        "articles": {
+            "exceptional_control_flow": {
+                "title": "Computer System - Exceptional Control Flow",
+                "author": "BinL",
+                "tags": ["computer-system", "x86", "exceptional", "signal", "process"],
+                "category": "",
+                "date": "May 5, 2025"
+            },
+        
+            "machine_program_data": {
+                "title": "Computer System - Machine Program & Data",
+                "author": "BinL",
+                "tags": ["computer-system", "x86", "assembly", "compiler"],
+                "category": "",
+                "date": "May 4, 2025"
+            },
+        
+            "bit_integer_floating": {
+                "title": "Computer System - Bit, Integer, Floating",
+                "author": "BinL",
+                "tags": ["computer-system", "x86", "ieee754"],
+                "category": "",
+                "date": "May 4, 2025"
+            }
         }
     },
 
     "cuda": {
-        "gpu_cuda": {
-            "title": "GPU & CUDA basic knowledge",
-            "author": "BinL",
-            "tags": ["gpu", "cuda"],
-            "category": "",
-            "date": "Mar 20, 2025"
+        "title": "CUDA",
+        "articles": {
+            "gpu_cuda": {
+                "title": "GPU & CUDA basic knowledge",
+                "author": "BinL",
+                "tags": ["gpu", "cuda"],
+                "category": "",
+                "date": "Mar 20, 2025"
+            }
         }
     },
 
     "programming_languages": {
-        "go_knowledge": {
-            "title": "Golang Knowledge",
-            "author": "BinL",
-            "tags": ["golang", "programming-language"],
-            "category": "",
-            "date": "Oct 16, 2024"
-        },
+        "title": "Programming Languages",
+        "articles": {
+            "go_knowledge": {
+                "title": "Golang Knowledge",
+                "author": "BinL",
+                "tags": ["golang", "programming-language"],
+                "category": "",
+                "date": "Oct 16, 2024"
+            },
 
-        "golang_basic": {
-            "title": "Golang Basics",
-            "author": "BinL",
-            "tags": ["golang", "programming-language"],
-            "category": "",
-            "date": "Mar 30, 2025"
+            "golang_basic": {
+                "title": "Golang Basics",
+                "author": "BinL",
+                "tags": ["golang", "programming-language"],
+                "category": "",
+                "date": "Mar 30, 2025"
+            }
         }
     },
 
     "others": {
-        "algorithm": {
-            "title": "Algorithms",
-            "author": "BinL",
-            "tags": ["algorithm"],
-            "category": "",
-            "date": "Jan 6, 2026"
-        },
-        
-        "regular_expressions": {
-            "title": "Regular Expressions",
-            "author": "BinL",
-            "tags": ["regrex", "regular-expressions"],
-            "category": "",
-            "date": "Sep 24, 2025"
-        },
-        
-        "git_command": {
-            "title": "Git Common Commands",
-            "author": "BinL",
-            "tags": ["git", "command"],
-            "category": "",
-            "date": "Sep 27, 2024"
+        "title": "Others",
+        "articles": {
+            "algorithm": {
+                "title": "Algorithms",
+                "author": "BinL",
+                "tags": ["algorithm"],
+                "category": "",
+                "date": "Jan 6, 2026"
+            },
+            
+            "regular_expressions": {
+                "title": "Regular Expressions",
+                "author": "BinL",
+                "tags": ["regrex", "regular-expressions"],
+                "category": "",
+                "date": "Sep 24, 2025"
+            },
+            
+            "git_command": {
+                "title": "Git Common Commands",
+                "author": "BinL",
+                "tags": ["git", "command"],
+                "category": "",
+                "date": "Sep 27, 2024"
+            }
         }
     }
 }
