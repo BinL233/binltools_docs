@@ -18,10 +18,10 @@ func main() {
 	// Print
 	fmt.Println(name)
 	fmt.Println(id)
-	fmt.Println(birth_date)
-	fmt.Println(alphabets)
-	fmt.Println(fruits)
-	fmt.Println(colors)
+
+	// Inf
+	math.MaxInt // Max int
+	math.Inf(1) // Max float64
 
 	// For loop
 	for i := 0; i < len(numbers); i++ {
@@ -233,4 +233,47 @@ func Max(x, y int) int {
 
 ```go
 go run <go file>
+```
+
+### Heap
+
+https://pkg.go.dev/container/heap
+
+```go
+import (
+    "container/heap"
+)
+
+type IntHeap []int
+
+func (h IntHeap) Len() int            { return len(h) }
+// This is min-heap, So we get smallest element when Pop()
+func (h IntHeap) Less(i, j int) bool  { return h[i] < h[j] } 
+func (h IntHeap) Swap(i, j int)       { h[i], h[j] = h[j], h[i] }
+
+func (h *IntHeap) Push(x any) {
+		// x.(int): Type assertion, we need this for interface
+		// Int(x) only used when x is a number already
+    *h = append(*h, x.(int))
+}
+
+func (h *IntHeap) Pop() any {
+    old := *h
+    n := len(old)
+    x := old[n-1]
+    *h = old[0 : n-1]
+    return x
+}
+
+func main() {
+    h := &IntHeap{2, 1, 5}
+    heap.Init(h)
+
+    heap.Push(h, 3)
+    fmt.Printf("Min: %d\n", (*h)[0]) // smallest value
+
+    for h.Len() > 0 {
+        fmt.Printf("%d ", heap.Pop(h)) // in ascending order
+    }
+}
 ```
