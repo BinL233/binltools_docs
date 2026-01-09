@@ -2,7 +2,7 @@
 
 File Formatting Tool (FFT) is a Microsoft Word add-in designed to improve efficiency, consistency, and accuracy when formatting documents for health authority submissions. 
 
-FFT is especially useful for regulatory documents that:
+FFT is useful for regulatory documents that:
 - Under eCTD structure
 - Contain extensive tables, figures, and cross-references
 - Frequent revisions and re-formatting
@@ -14,15 +14,23 @@ Three Advantages:
 
 Once FFT is opened in Word, it appears as a task pane on the right side of the document.
 
-## Settings
+## Icon
+Before diving into the FFT Word, let's take a step in the pane discovery.
 
-It is designed to help users get oriented, access documentation, and understand the Shortcut function before applying any formatting. 
+### Announcement
+
+
+### Settings
+It is designed to help users get oriented, access documentation, and understand the shortcut function before applying any formatting. 
 Click the Setting icon in the top-right corner of the FFT pane. 
 
 From here, users can manage:
 - About - check documentation (User Guide), version and contact developer.
 - Notification - enable or disable the notification for each action.
 - Shortcuts - customize shortcut keys based on preference or reset to default. See 2.1 for more details.
+
+💡 Tip: Clear all the track changes and comments before formatting.
+         File → Info → Check for Issues → Inspect Document → Remove All (Comments, Revisions, and Versions)
 
 ## Step 1 Configure
 Step 1 defines how FFT will prepare the document before formatting begins. 
