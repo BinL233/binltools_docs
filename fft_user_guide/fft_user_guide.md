@@ -8,9 +8,9 @@ FFT is especially useful for regulatory documents that:
 - Frequent revisions and re-formatting
 
 Three Advantages:
-1. Works directly inside Word
-2. Applies to any Word documents
-3. Keyboard-driven shortcuts
+- Works directly inside Word
+-  Applies to any Word documents
+-  Keyboard-driven shortcuts
 
 Once FFT is opened in Word, it appears as a task pane on the right side of the document.
 
@@ -79,9 +79,9 @@ Users can manually define page margins (in inches):
 The Keyboard-driven shortcuts is one of the most distinctive and powerful features of FFT. It allows users to format paragraph entirely by keyboard, significantly improve efficiency and eliminate repetitive formatting tasks.
 
 Three Key principles:
-1. Pre-defined Word Styles - all shortcuts applied one key to one style, and aligned with health authority eCTD expectations.
-2. Sequential Traversal - one paragraph at a time, auto-skip all the table and figure, focus on plain-text only.
-3. Shortcut Mode - active only when the floating window is in green with "Shortcut On" and apply only to the navigated paragraph.
+- Pre-defined Word Styles - all shortcuts applied one key to one style, and aligned with health authority eCTD expectations.
+- Sequential Traversal - one paragraph at a time, auto-skip all the table and figure, focus on plain-text only.
+- Shortcut Mode - active only when the floating window is in green with "Shortcut On" and apply only to the navigated paragraph.
 
 #### 2.2.1 Step by Step Instruction
 
