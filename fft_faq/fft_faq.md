@@ -13,7 +13,7 @@
    ![1](/fft_faq/images/8.png)
    - Define the multi-level list at the beginning.
    1. Select the heading and number
-   2. Multi-level list ![1](/fft/images/10.png)
+   2. Multi-level list ![1](/fft_faq/images/10.png)
    3. Define New Multilevel List -> Ok
    ![1](/fft_faq/images/9.png)
    4. 
