@@ -77,6 +77,7 @@ These options allow fine control over whether FFT should overwrite existing head
    OFF: Keeps the document’s existing footer unchanged
 
 💡 Tips: 
+
 Turn OFF these options if
 - The document already contains an approved or validated header/footer
 - Users are working on a late-stage document and want to preserve layout
@@ -128,38 +129,50 @@ Three Key principles:
 - Sequential Traversal - one paragraph at a time, auto-skip all the table and figure, focus on plain-text only.
 - Shortcut Mode - active only when the floating window is in green with "Shortcut On" and apply only to the navigated paragraph.
 
-##### 2.1.2.1 Step-by-Step Paragraph Formatting
+#### Step-by-Step Paragraph Formatting
 1. Place the Cursor
-   Click anywhere inside the paragraph that needs to be formatted. The cursor must be inside plain text, not inside a table or figure.
+
+   Click anywhere inside the paragraph that needs to be formatted. 
+
+   The cursor must be inside plain text, not inside a table or figure.
 
 2. Activate Shortcut Mode
+
    Move the cursor to the FFT pane and click once.
+
    The floating indicator will change from: “Shortcut Off” (grey) → “Shortcut On” (green)
+
    This confirms that shortcuts are active.
 
 3. Navigate to the current paragraph
+
    Press [N] on the keyboard. (Think about "Navigate")
+
    FFT will select the paragraph containing the cursor and highlight it in grey.
 
 4. Apply the Desired Style
+
    Press the shortcut key corresponding to the target style (as shown in grey parentheses on the style buttons).
+
    The style is applied immediately, and the selection remains on the same paragraph.
 
 5. Move to the Next paragraph
+
    Press [→] to move to the next paragraph.
+
    Repeat step 4 and 5 until the entire document is formatted.
 
-##### 2.1.2.2 Default Navigation Shortcuts
-   [N] – Navigate to the currently selected location
-   [←] - Move to the previous paragraph
-   [→] - Move to the next paragraph
-   [X] - Normal (justify)
-   [C] - Normal 2 (align left)
-   [1~5] - Heading 1 to Heading 5
-   [6] - Table title
-   [7] - Figure title
-   [B] - Bullets
-   [V] - Numbering
+#### Default Shortcuts
+- [N] – Navigate to the currently selected location
+- [←] - Move to the previous paragraph
+- [→] - Move to the next paragraph
+- [X] - Normal (justify)
+- [C] - Normal 2 (align left)
+- [1~5] - Heading 1 to Heading 5
+- [6] - Table title
+- [7] - Figure title
+- [B] - Bullets
+- [V] - Numbering
 
 💡 Tips:
 - FFT automatically skips tables and figures during shortcut navigation.
@@ -186,12 +199,17 @@ FFT formats only the cells inside this defined range.
 
 #### 2.2.2 Step-by-Step Table Formatting
 1. Define the Start of the Target Area
+
    Click inside the top-left cell of the area to be formatted.
+
    Click Submit.
 
 2. Define the End and Apply Style
+
    Click inside the bottom-right cell of the target area.
+   
    Set the desired Text Size (default: 10Pt).
+
    Choose the appropriate cell type.
 
 #### 2.2.3 Cell Style Options
@@ -210,9 +228,6 @@ Cells with indentation
 This option preserves existing indentation and is recommended for hierarchical tables.
 
 Example:
-Sex
-  Male
-  Female
 
 Use “Cells with indentation” when indentation conveys hierarchy or categorization.
 
