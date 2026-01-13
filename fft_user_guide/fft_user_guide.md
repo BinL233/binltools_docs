@@ -27,9 +27,9 @@ Designed to help users get oriented, access documentation, and get in touch with
 Click the Settings icon in the top-right corner of the FFT pane. 
 
 From here, users can manage:
-- About - check documentation (User Guide), version and contact developer.
-- Notification - enable or disable the notification for each action.
-- Shortcuts - customize shortcut keys based on preference or reset to default. See 2.1 for more details.
+- About - check documentation (User Guide), version and contact developer
+- Notification - enable or disable the notification for each action
+- Shortcuts - customize shortcut keys based on preference or reset to default. See 2.1 for more details
 
 💡 Tips: 
 - Clear all the track changes and comments before formatting: File → Info → Check for Issues → Inspect Document → Remove All (Comments, Revisions, and Versions)
@@ -129,9 +129,17 @@ The Keyboard-driven shortcuts is one of the most powerful features of FFT.
 It allows users to format paragraph entirely by keyboard, significantly improve efficiency and eliminate repetitive formatting tasks.
 
 Three Key principles:
-- Pre-defined Word Styles - all shortcuts applied one key to one style, and aligned with health authority eCTD expectations.
-- Sequential Traversal - one paragraph at a time, auto-skip all the table and figure, focus on plain-text only.
-- Shortcut Mode - active only when the floating window is in green with "Shortcut On" and apply only to the navigated paragraph.
+- Pre-defined Word Styles
+
+   all shortcuts applied one key to one style, and aligned with health authority eCTD expectations
+
+- Sequential Traversal
+
+   one paragraph at a time, auto-skip all the table and figure, focus on plain-text only
+
+- Shortcut Mode
+   
+   active only when the floating window is in green with "Shortcut On" and apply only to the navigated paragraph
 
 #### Step-by-Step Paragraph Formatting
 - Place the Cursor
@@ -172,13 +180,13 @@ Three Key principles:
 - [→] - Move to the next paragraph
 
 💡 Tips:
-- FFT automatically skips tables and figures during shortcut navigation.
-- Shortcuts Keys can be customized in the Settings.
+- FFT automatically skips tables and figures during shortcut navigation
+- Shortcuts Keys can be customized in the Settings
 
 #### 2.1.2 Method B – Formatting Using Style Buttons
 Users may also format content using the mouse:
-- Select a paragraph using the cursor.
-- Click the desired style button in the FFT pane.
+- Select a paragraph using the cursor
+- Click the desired style button in the FFT pane
 
 Example: Select a table caption and click Table Title [6] to apply the predefined table title style.
 
@@ -240,5 +248,67 @@ Examples:
 This action applies to the entire document and cannot be limited to a selected range.
 
 
+## Step 3 Finalize
+Step 3 Finalize is the final stage of FFT.
+It is used to generate document-wide reference structures, including bookmarks and tables of contents.
 
-## Step 3 Generate
+Step 3 contains two sections:
+- 3.1 Bookmarks – Auto-add bookmarks based on the references
+- 3.2 TOC – Auto-generate the Table of Contents, Table of Figures, and Table of Tables
+
+### 3.1 Bookmarks
+Section 3.1 automatically creates bookmarks for references with a single click.
+This function is designed to simplify cross-referencing literature references within the document.
+
+FFT will:
+
+- Identify the “References” section (typically the last section of the document)
+- Automatically add bookmarks for each reference entry
+- Assign each bookmark a standardized name (first-author-name_year, such as Ying_2022)
+
+These bookmarks will appear in Word → Insert → Bookmark, allowing users to easily locate and reference them.
+
+#### Step-by-Step Adding Bookmarks
+- Confirm the Reference section is formatted with FFT Heading in Styles
+- Navigate to Step 3 Finalize
+- Under 3.1 Bookmarks, click Add Bookmarks
+- FFT scans the References section and creates bookmarks automatically.
+
+#### Create a Cross-Reference in the Paragraph
+- Select the text in the paragraph where the reference should appear
+- Go to Word → Insert → Cross-reference
+- Choose Bookmark as the reference type
+- Select the appropriate name_year bookmark
+
+#### Important Distinction: Bookmarks vs Figures/Tables
+Bookmarks are used for literature references only.
+Figures and tables are cross-referenced using Word fields, not bookmarks.
+
+Figure and table fields are automatically created when users apply Figure Title and Table Title in Step 2 Format → 2.1 Styles.
+
+To cross-reference figures or tables:
+- Use Word → Insert → Cross-reference
+- Select Figure or Table as the reference type
+
+💡 Tips:
+- FFT prevents duplicate creation if “Add Bookmarks” is clicked multiple times
+- Adding Bookmarks can be undone with a single Ctrl + Z
+
+### 3.2 TOC (Table of Contents)
+Section 3.2 generates the structural tables required for health authority submissions.
+With a single click, FFT will generate Table of Contents, Table of Figures and Table of Tables based on the FFT headings.
+
+#### Step-by-Step Adding TOC
+- Confirm all the headings equipped with FFT Heading in Styles
+- Navigate to Step 3 Finalize
+- Under 3.2 TOC, click Add TOC
+- FFT inserts all three tables at the cursor position.
+
+💡 Tips:
+- Do Not Update FFT TOC Manually
+
+   If users edit headings after generating the TOC - right-click the TOC and choose Update Field, Word will apply its default TOC format and overwrite the FFT-defined structure.
+   
+   If This Happens, delete the entire TOC, Table of Figures, and Table of Tables, and click Add TOC again.
+
+Once Step 3 is complete, the document is ready for cross-reference verification, final QC review and submission export (eCTD / PDF).
