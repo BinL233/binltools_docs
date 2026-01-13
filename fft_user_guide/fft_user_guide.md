@@ -37,6 +37,8 @@ From here, users can manage:
 ### Configure, Format and Generate
 Configure, Format, and Generate are the three fundamental processes of FFT, which help a document go from disorderly to ready for submission.
 
+
+
 ## Step 1 Configure
 Step 1 Configure defines how FFT will prepare the document before formatting begins. 
 This step allows users to load a predefined FFT template, control layout elements, and set page margins.
@@ -91,6 +93,8 @@ Users can manually define page margins (in inches):
 
 The specified margins will be applied when formatting begins.
 
+
+
 ## Step 2 Format
 Step 2 Format is where FFT applies formatting to document content.
 This step becomes available only after Step 1 Configure has been completed and submitted.
@@ -130,13 +134,13 @@ Three Key principles:
 - Shortcut Mode - active only when the floating window is in green with "Shortcut On" and apply only to the navigated paragraph.
 
 #### Step-by-Step Paragraph Formatting
-1. Place the Cursor
+- Place the Cursor
 
    Click anywhere inside the paragraph that needs to be formatted. 
 
    The cursor must be inside plain text, not inside a table or figure.
 
-2. Activate Shortcut Mode
+- Activate Shortcut Mode
 
    Move the cursor to the FFT pane and click once.
 
@@ -144,35 +148,28 @@ Three Key principles:
 
    This confirms that shortcuts are active.
 
-3. Navigate to the current paragraph
+- Navigate to the current paragraph
 
    Press [N] on the keyboard. (Think about "Navigate")
 
    FFT will select the paragraph containing the cursor and highlight it in grey.
 
-4. Apply the Desired Style
+- Apply the Desired Style
 
    Press the shortcut key corresponding to the target style (as shown in grey parentheses on the style buttons).
 
    The style is applied immediately, and the selection remains on the same paragraph.
 
-5. Move to the Next paragraph
+- Move to the Next paragraph
 
    Press [→] to move to the next paragraph.
 
    Repeat step 4 and 5 until the entire document is formatted.
 
-#### Default Shortcuts
+#### Default Shortcuts Not Included in the Styles Pane
 - [N] – Navigate to the currently selected location
 - [←] - Move to the previous paragraph
 - [→] - Move to the next paragraph
-- [X] - Normal (justify)
-- [C] - Normal 2 (align left)
-- [1~5] - Heading 1 to Heading 5
-- [6] - Table title
-- [7] - Figure title
-- [B] - Bullets
-- [V] - Numbering
 
 💡 Tips:
 - FFT automatically skips tables and figures during shortcut navigation.
@@ -198,13 +195,13 @@ Users define a target area within a table by selecting:
 FFT formats only the cells inside this defined range.
 
 #### 2.2.2 Step-by-Step Table Formatting
-1. Define the Start of the Target Area
+- Define the Start of the Target Area
 
    Click inside the top-left cell of the area to be formatted.
 
    Click Submit.
 
-2. Define the End and Apply Style
+- Define the End and Apply Style
 
    Click inside the bottom-right cell of the target area.
    
@@ -241,3 +238,7 @@ Examples:
 - ： → :
 
 This action applies to the entire document and cannot be limited to a selected range.
+
+
+
+## Step 3 Generate
