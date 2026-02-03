@@ -1,3 +1,4 @@
+## Vim 
 ### Navigation
 - `h` `j` `k` `l`: Left, Down, Up, Right
 - `w`: Jump to the start of next word
@@ -36,3 +37,23 @@
 - `sp`: Split window horizontally
 - `vsp`: Split window vertically
 
+## Nvim & Plugins
+### Edit
+- `gc`: Comment line/range
+
+### LSP
+- `[d`: Jump to previous error
+- `]d`: Jump to next error
+- `<C-w>d`: Show error
+
+### Nvim Tree
+- `C-ww`: Toggle file explorer
+- `a`: Add file
+- `d`: Delete file
+- `r`: Rename file
+- `x`: Cut file
+- `c`: Copy file
+- `p`: Paste file
+- `R`: Refresh explorer
+- `/`: Search file
+- `C-t`: Open a file with new tab
