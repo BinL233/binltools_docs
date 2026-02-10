@@ -14,7 +14,7 @@ Three Advantages:
 Once FFT is opened in Word, it appears as a task pane on the right side of the document.
 
 ## Icons
-Before diving into the FFT Word, let's take a step into the pane discovery.
+Before diving into the FFT World, let's take a step into the pane discovery.
 
 ### Announcements
 Updated information will be posted in the announcements section, including but not limited to version updates, issues detected/solved, new feature releases, etc.
