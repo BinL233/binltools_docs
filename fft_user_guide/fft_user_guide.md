@@ -14,12 +14,12 @@ Three Advantages:
 Once FFT is opened in Word, it appears as a task pane on the right side of the document.
 
 ## Icons
-Before diving into the FFT World, let's take a step into the pane discovery.
+Before diving into the FFT, let's take a step into the pane discovery.
 
-### Announcements
-Updated information will be posted in the announcements section, including but not limited to version updates, issues detected/solved, new feature releases, etc.
+### Announcements ![1](/fft_user_guide/images/11.png)
+Updated information will be posted in the announcements section, including version updates, issues detected/solved, new feature releases, etc.
 
-### Shortcuts Status
+### Shortcuts Status ![1](/fft_user_guide/images/12.png)
 Visual check for the Shortcuts function. The details of the Shortcuts function will be covered in section 2.1.
 
 ### Settings
@@ -148,7 +148,7 @@ Three Key principles:
 
    The cursor must be inside plain text, not inside a table or figure.
 
-- Activate Shortcut Mode
+- Activate Shortcut Mode ![1](/fft_user_guide/images/13.png)
 
    Move the cursor to the FFT pane and click once.
 
