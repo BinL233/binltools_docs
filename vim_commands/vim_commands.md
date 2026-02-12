@@ -38,6 +38,8 @@
 - `vsp`: Split window vertically
 
 ## Nvim & Plugins
+The keymaps below are my own customized. They may not in default.
+
 ### Edit
 - `gc`: Comment line/range
 
@@ -57,3 +59,8 @@
 - `R`: Refresh explorer
 - `/`: Search file
 - `C-t`: Open a file with new tab
+
+### Barbar
+- `A-,`: Previous tab
+- `A-.`: Next tab
+- `A-c`: Close tab
